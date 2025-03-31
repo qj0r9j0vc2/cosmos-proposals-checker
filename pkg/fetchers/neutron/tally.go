@@ -7,7 +7,7 @@ import (
 )
 
 func (fetcher *Fetcher) GetTallies(ctx context.Context) (types.ChainTallyInfos, error) {
-	query := "{\"reverse_proposals\": {\"limit\": 1000}}"
+	query := "{\"reverse_proposals\": {\"limit\": 100}}"
 
 	var proposals responses.ProposalsResponse
 	if _, err := fetcher.GetSmartContractState(query, &proposals, 0, ctx); err != nil {

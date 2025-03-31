@@ -11,7 +11,7 @@ import (
 	"github.com/rs/zerolog"
 )
 
-const PaginationLimit = 1000
+const PaginationLimit = 100
 
 type RPC struct {
 	ChainConfig     *types.Chain
